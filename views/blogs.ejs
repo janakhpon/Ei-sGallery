@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Ei'sGallery ❤️</title>
+	<link href="images/gt_black.png" rel="icon" type="image/png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/thumbnail-gallery.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="vendor/nucleo/css/nucleo.css" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body >
+
+    <div class="container gallery-container" style="font-weight: bold;">
+
+</h1>
+
+        <p class="page-description text-center"></p>
+
+        <div class="tz-gallery">
+
+            <div class="row">
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="../images/fulls/first.png">
+                            <img src="../images/fulls/first.png" alt="Tunnel">
+                        </a>
+                        <div class="caption">
+                            <h3>Monday September 2018</h3>
+<p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="../images/fulls/first1.png">
+                            <img src="../images/fulls/first1.png" alt="Coast">
+                        </a>
+                        <div class="caption">
+                            <h3>Sunday September 2018</h3>
+<p> Gotta say super sunday .. OMG!!! .. why I have never been  here ...to look such a majestic panorama ..what an awesome … I love it .</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="../images/fulls/first4.png">
+                            <img src="../images/fulls/first4.png" alt="Coast">
+                        </a>
+                        <div class="caption">
+                            <h3>Saturday September 2018</h3>
+<p> What a good time to savor the moment by shooting and capturing the beauty of nature ...what a moment ..don’t wanna go back home!.</p>
+                        </div>
+                    </div>
+                </div>
+                  <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="../images/fulls/first5.png">
+                        <img src="../images/fulls/first5.png" alt="Bridge">
+                    </a>
+                    <div class="caption">
+                        <h3>Tuesday  September 2018</h3>
+<p> Pretty awesome ..chasing the freedom  within by taking off stress ...shitting social ….what a great day … Love to be here .. love to do so ..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="../images/fulls/first6.png">
+                        <img src="../images/fulls/first6.png" alt="Tunnel">
+                    </a>
+                    <div class="caption">
+                        <h3>Wednesday September 2018</h3>
+<p> it has been a long time ..not getting full freedom ...ruminate me again ..can’t wait till weekend so here I am </p>
+
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="../images/fulls/first7.png">
+                        <img src="../images/fulls/first7.png" alt="Coast">
+                    </a>
+                    <div class="caption">
+                        <h3>Thursday September 2018</h3>
+<p> We all might be seeking peace ..when pressure coming down heavily ..bursting out of it is the difficult things we all face ..so that is how I overcome it .. it’s always recuperate my mindset ..to do stuff like this </p>
+                    </div>
+                </div>
+            </div>
+
+                <% for(var i=0; i<data.length; i++) {%>
+
+
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="<%= data[i].Post_image %>">
+                            <img src="<%= data[i].Post_image %>" alt="Park">
+                        </a>
+                        <div class="caption">
+                            <h3><%= data[i].Post_title %></h3>
+                            <p><%= data[i].Post_comment %></p>
+
+                            <form method="post" action="/delete">
+                              <input id="prodId"  name="prodId" type="hidden" value="<%= data[i]._id %>">
+                              <button type="submit" class="btn-sm btn-danger text-center" name="Delete" > remove </button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+
+
+              <% } %>
+
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="../images/fulls/first8.png">
+                        <img src="../images/fulls/first8.png" alt="Bridge">
+                    </a>
+                    <div class="caption">
+                       <h3>Friday September 2018</h3>
+<p> OMG! Feel like flying ...no pressure ..no shit who cares ? And who knows? That I’m fucking happy all by my self alone… doing stuff like this ...seize the moment!!!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="../images/fulls/first9.png">
+                        <img src="../images/fulls/first9.png" alt="Tunnel">
+                    </a>
+                    <div class="caption">
+                       <h3>Sunday September 2018</h3>
+<p> Gotta say super sunday .. OMG!!! .. why I have never been  here ...to look such a majestic panorama ..what an awesome … I love it .</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="../images/fulls/first10.png">
+                        <img src="../images/fulls/first10.png" alt="Coast">
+                    </a>
+                    <div class="caption">
+                        <h3>Saturday September 2018</h3>
+<p> What a good time to savor the moment by shooting and capturing the beauty of nature ...what a moment ..don’t wanna go back home!.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="../images/fulls/first11.png">
+                        <img src="../images/fulls/first11.png" alt="Bridge">
+                    </a>
+                    <div class="caption">
+                        
+<h3>Thursday September 2018</h3>
+<p> We all might be seeking peace ..when pressure coming down heavily ..bursting out of it is the difficult things we all face ..so that is how I overcome it .. it’s always recuperate my mindset ..to do stuff like this </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="../images/fulls/first12.png">
+                        <img src="../images/fulls/first12.png" alt="Tunnel">
+                    </a>
+                    <div class="caption">
+                        <h3>Saturday September 2018</h3>
+<p> What a good time to savor the moment by shooting and capturing the beauty of nature ...what a moment ..don’t wanna go back home!.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="../images/fulls/first13.png">
+                        <img src="../images/fulls/first13.png" alt="Coast">
+                    </a>
+                    <div class="caption">
+                        <h3>Monday September 2018</h3>
+<p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="../images/fulls/first14.png">
+                        <img src="../images/fulls/first14.png" alt="Bridge">
+                    </a>
+                    <div class="caption">
+                        <h3>Wednesday September 2018</h3>
+<p> it has been a long time ..not getting full freedom ...ruminate me again ..can’t wait till weekend so here I am </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="../images/fulls/first8.jpg">
+                        <img src="../images/fulls/first8.jpg" alt="Tunnel">
+                    </a>
+                    <div class="caption">
+                       <h3>Monday September 2018</h3>
+<p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="../images/fulls/first17.jpg">
+                        <img src="../images/fulls/first17.jpg" alt="Coast">
+                    </a>
+                    <div class="caption">
+                       <h3>Monday September 2018</h3>
+<p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="../images/fulls/first18.jpg">
+                        <img src="../images/fulls/first18.jpg" alt="Coast">
+                    </a>
+                    <div class="caption">
+                        <h3>Friday September 2018</h3>
+<p> OMG! Feel like flying ...no pressure ..no shit who cares ? And who knows? That I’m fucking happy all by my self alone… doing stuff like this ...seize the moment!!!</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="../images/fulls/first20.JPG">
+                        <img src="../images/fulls/first20.JPG" alt="Bridge">
+                    </a>
+                    <div class="caption">
+                       <h3>Wednesday September 2018</h3>
+<p> it has been a long time ..not getting full freedom ...ruminate me again ..can’t wait till weekend so here I am </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="../images/fulls/first21.JPG">
+                        <img src="../images/fulls/first21.JPG" alt="Tunnel">
+                    </a>
+                    <div class="caption">
+                       <h3>Monday September 2018</h3>
+<p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="../images/fulls/first22.png">
+                        <img src="../images/fulls/first22.png" alt="Coast">
+                    </a>
+                    <div class="caption">
+                        <h3>Sunday September 2018</h3>
+<p> Gotta say super sunday .. OMG!!! .. why I have never been  here ...to look such a majestic panorama ..what an awesome … I love it .</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="../images/fulls/first23.jpg">
+                        <img src="../images/fulls/first23.jpg" alt="Tunnel">
+                    </a>
+                    <div class="caption">
+                       <h3>Saturday September 2018</h3>
+<p> What a good time to savor the moment by shooting and capturing the beauty of nature ...what a moment ..don’t wanna go back home!.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="../images/fulls/first24.jpg">
+                        <img src="../images/fulls/first24.jpg" alt="Coast">
+                    </a>
+                    <div class="caption">
+                        <h3>Tuesday  September 2018</h3>
+<p> Pretty awesome ..chasing the freedom  within by taking off stress ...shitting social ….what a great day … Love to be here .. love to do so ..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="../images/fulls/first2.png">
+                        <img src="../images/fulls/first2.png" alt="Bridge">
+                    </a>
+                    <div class="caption">
+                        <h3>Wednesday September 2018</h3>
+<p> it has been a long time ..not getting full freedom ...ruminate me again ..can’t wait till weekend so here I am </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="../images/fulls/first3.png">
+                        <img src="../images/fulls/first3.png" alt="Tunnel">
+                    </a>
+                    <div class="caption">
+                        <h3>Thursday September 2018</h3>
+<p> We all might be seeking peace ..when pressure coming down heavily ..bursting out of it is the difficult things we all face ..so that is how I overcome it .. it’s always recuperate my mindset ..to do stuff like this </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="../images/fulls/first0.jpg">
+                        <img src="../images/fulls/first0.jpg" alt="Bridge">
+                    </a>
+                    <div class="caption">
+                        <h3>Friday September 2018</h3>
+<p> OMG! Feel like flying ...no pressure ..no shit who cares ? And who knows? That I’m fucking happy all by my self alone… doing stuff like this ...seize the moment!!!</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+</body>
+</html>

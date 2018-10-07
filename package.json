@@ -1,0 +1,24 @@
+{
+  "name": "ei-sgallery",
+  "version": "1.0.0",
+  "description": "Gallery uses NodeJS, ExpressJS,MongoDB, FacebookAuth, PassportJS, Multer",
+  "main": "app.js",
+  "scripts": {
+    "start":"node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ja Nakh Pon",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "colors": "^1.3.2",
+    "connect-ensure-login": "^0.1.1",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.7",
+    "multer": "^1.3.0",
+    "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1",
+    "weather-js": "^2.0.0"
+  }
+}
