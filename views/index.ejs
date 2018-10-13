@@ -1,296 +1,695 @@
 <!DOCTYPE HTML>
 
 <html>
-  <head>
-    <title> Ei'sGallery ❤️</title>
-    <link href="images/gt_black.png" rel="icon" type="image/png">
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    <style type="text/css">
 
-h3{
-  font-size: 20px;
-  font-weight: bold;
-  font-family: San Francisco Text;
-}
+<head>
+  <title> Ei'sGallery ❤️</title>
+  <link href="images/gt_black.png" rel="icon" type="image/png">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!-- Icons -->
+  <link href="argon/assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript>
+    <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <style type="text/css">
+    h3 {
+      font-size: 20px;
+      font-weight: bold;
+      font-family: San Francisco Text;
+    }
 
-p{
+    p {
 
-  font-size: 18px;
-  font-weight: bold;
-  font-family: San Francisco Text;
+      font-size: 18px;
+      font-weight: bold;
+      font-family: San Francisco Text;
 
-}
+    }
 
-.fields{
-  font-weight: bold;
-  font-family: San Francisco Text;
-}
+    .fields {
+      font-weight: bold;
+      font-family: San Francisco Text;
+    }
 
 
-.action{
-  font-weight: bold;
-  font-family: San Francisco Text;
-}
+    .action {
+      font-weight: bold;
+      font-family: San Francisco Text;
+    }
+
     div.upload {
-    width: 150px;
-    height: 60px;
-    margin-left: 5%;
-    margin-top: 4%;
-    background: url(images/icons8-add-image-filled-50.png);
-    overflow: hidden;
-    background-repeat: no-repeat;
-    cursor: zoom-in;
+      width: 150px;
+      height: 60px;
+      margin-left: 5%;
+      margin-top: 4%;
+      background: url(images/icons8-add-image-filled-50.png);
+      overflow: hidden;
+      background-repeat: no-repeat;
+      cursor: zoom-in;
 
 
-}
-
-
-
-div.upload input {
-    display: block !important;
-    width: 150px !important;
-    height: 60px !important;
-    opacity: 0 !important;
-    overflow: hidden !important;
-  
-
-}
-</style>
-  </head>
-  <body class="is-preload">
-
-    <!-- Wrapper -->
-      <div id="wrapper">
-
-        <!-- Header -->
-          <header id="header">
-            <h1><a href="/blogs" target="_blank"><strong>Private Cloud Gallery</strong></a></h1>
-            <nav>
-              <ul>
-                <li><a href="#footer" class="icon fa-info-circle">Manage</a></li>
-              </ul>
-            </nav>
-          </header>
-
-        <!-- Main -->
-          <div id="main">
-
-          <article class="thumb">
-              <a href="images/fulls/first.png" class="image"><img src="images/fulls/first.png" alt="" /></a>
-              <h3>Monday September 2018</h3>
-<p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
-            </article>
-            <article class="thumb">
-              <a href="images/fulls/first1.png" class="image"><img src="images/fulls/first1.png" alt="" /></a>
-              <h3>Sunday September 2018</h3>
-<p> Gotta say super sunday .. OMG!!! .. why I have never been  here ...to look such a majestic panorama ..what an awesome … I love it .</p>
-            </article>
-            <article class="thumb">
-              <a href="images/fulls/first4.png" class="image"><img src="images/fulls/first4.png" alt="" /></a>
-              h3>Saturday September 2018</h3>
-<p> What a good time to savor the moment by shooting and capturing the beauty of nature ...what a moment ..don’t wanna go back home!.</p>
-            </article>
-            <article class="thumb">
-              <a href="images/fulls/first3.png" class="image"><img src="images/fulls/first3.png" alt="" /></a>
-              <h3>Tuesday  September 2018</h3>
-<p> Pretty awesome ..chasing the freedom  within by taking off stress ...shitting social ….what a great day … Love to be here .. love to do so ..</p>
-            </article>
-             <article class="thumb">
-              <a href="images/fulls/first8.jpg" class="image"><img src="images/fulls/first8.jpg" alt="" /></a>
-             <h3>Wednesday September 2018</h3>
-<p> it has been a long time ..not getting full freedom ...ruminate me again ..can’t wait till weekend so here I am </p>
-            </article>
-            <article class="thumb">
-              <a href="images/fulls/first18.jpg" class="image"><img src="images/fulls/first18.jpg" alt="" /></a>
-             <h3>Thursday September 2018</h3>
-<p> We all might be seeking peace ..when pressure coming down heavily ..bursting out of it is the difficult things we all face ..so that is how I overcome it .. it’s always recuperate my mindset ..to do stuff like this </p>
-            </article>
-            <article class="thumb">
-              <a href="images/fulls/first20.JPG" class="image"><img src="images/fulls/first20.JPG" alt="" /></a>
-              <h3>Friday September 2018</h3>
-<p> OMG! Feel like flying ...no pressure ..no shit who cares ? And who knows? That I’m fucking happy all by my self alone… doing stuff like this ...seize the moment!!!</p>
-
-            </article>
-            <article class="thumb">
-              <a href="images/fulls/first21.JPG" class="image"><img src="images/fulls/first21.JPG" alt="" /></a>
-              <h3>Thursday December 2017 </h3>
-<p> We all might be seeking peace ..when pressure coming down heavily ..bursting out of it is the difficult things we all face ..so that is how I overcome it .. it’s always recuperate my mindset ..to do stuff like this </p>
-            </article>
+    }
 
 
 
-           <% for(var i=0; i<data.length; i++) {%>
+    div.upload input {
+      display: block !important;
+      width: 150px !important;
+      height: 60px !important;
+      opacity: 0 !important;
+      overflow: hidden !important;
 
 
-            <article class="thumb">
-              <a href="<%= data[i].Post_image %>" class="image"><img src ="<%= data[i].Post_image %>" alt="" /></a>
-              <h3><%= data[i].Post_title %></h3>
-              <p><%= data[i].Post_comment %></p>
+    }
+  </style>
+</head>
+
+<body class="is-preload">
+
+  <!-- Wrapper -->
+  <div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+      <h1><a href="/blogs" target="_blank"><strong>Private Cloud Gallery</strong></a></h1>
+      <nav>
+        <ul>
+          <li><a href="#footer" class="icon fa-info-circle">NEW PHOTO</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <div id="main">
+
+
+
+      <% for(var i=0; i<data.length; i++) {%>
+
+
+      <article class="thumb">
+        <a href="<%= data[i].Post_image %>" class="image"><img src="<%= data[i].Post_image %>" alt="" /></a>
+        <h3>
+          <%= data[i].Post_title %>
+        </h3>
+        <p>
+          <%= data[i].Post_comment %>
+        </p>
+
+
+      </article>
+
+
+      <% } %>
+
+
+
+      <article class="thumb">
+        <a href="images/fulls/City.jpg" class="image"><img src="images/fulls/City.jpg" alt="" /></a>
+        <h3>Monday September 2018</h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+      </article>
+
+      <article class="thumb">
+        <a href="images/fulls/first.png" class="image"><img src="images/fulls/first.png" alt="" /></a>
+        <h3>Monday September 2018</h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+      </article>
+      <article class="thumb">
+        <a href="images/fulls/first1.png" class="image"><img src="images/fulls/first1.png" alt="" /></a>
+        <h3>Sunday September 2018</h3>
+        <p> Gotta say super sunday .. OMG!!! .. why I have never been here ...to look such a majestic panorama ..what
+          an awesome … I love it .</p>
+      </article>
+      <article class="thumb">
+        <a href="images/fulls/first4.png" class="image"><img src="images/fulls/first4.png" alt="" /></a>
+        h3>Saturday September 2018</h3>
+        <p> What a good time to savor the moment by shooting and capturing the beauty of nature ...what a moment
+          ..don’t wanna go back home!.</p>
+      </article>
+      <article class="thumb">
+        <a href="images/fulls/first3.png" class="image"><img src="images/fulls/first3.png" alt="" /></a>
+        <h3>Tuesday September 2018</h3>
+        <p> Pretty awesome ..chasing the freedom within by taking off stress ...shitting social ….what a great day …
+          Love to be here .. love to do so ..</p>
+      </article>
+
+
+
+      <article class="thumb">
+        <a href="images/fulls/first2.png" class="image"><img src="images/fulls/first2.png" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+      </article>
+
+
+      <article class="thumb">
+        <a href="images/fulls/first5.png" class="image"><img src="images/fulls/first5.png" alt="" /></a>
+        <h3>Sunday December 2017 </h3>
+        <p> Gotta say super sunday .. OMG!!! .. why I have never been here ...to look such a majestic panorama ..what
+          an awesome … I love it .</p>
+
+      </article>
+
+      <article class="thumb">
+        <a href="images/fulls/first6.png" class="image"><img src="images/fulls/first6.png" alt="" /></a>
+        <h3>Tuesday December 2017 </h3>
+        <p> Pretty awesome ..chasing the freedom within by taking off stress ...shitting social ….what a great day …
+          Love to be here .. love to do so ..</p>
+      </article>
+
+
+      <article class="thumb">
+        <a href="images/fulls/first7.png" class="image"><img src="images/fulls/first7.png" alt="" /></a>
+        <h3>Wednesday December 2017 </h3>
+        <p> it has been a long time ..not getting full freedom ...ruminate me again ..can’t wait till weekend so here
+          I am </p>
+
+      </article>
+
+      <article class="thumb">
+        <a href="images/fulls/first8.png" class="image"><img src="images/fulls/first8.png" alt="" /></a>
+        <h3>Friday December 2017 </h3>
+        <p> OMG! Feel like flying ...no pressure ..no shit who cares ? And who knows? That I’m fucking happy all by
+          my self alone… doing stuff like this ...seize the moment!!!</p>
+
+      </article>
+
+      <article class="thumb">
+        <a href="images/fulls/first9.png" class="image"><img src="images/fulls/first9.png" alt="" /></a>
+        <h3>Sunday December 2017 </h3>
+        <p> Gotta say super sunday .. OMG!!! .. why I have never been here ...to look such a majestic panorama ..what
+          an awesome … I love it .</p>
+
+      </article>
+
+      <article class="thumb">
+        <a href="images/fulls/first10.png" class="image"><img src="images/fulls/first10.png" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+      <article class="thumb">
+        <a href="images/fulls/first11.png" class="image"><img src="images/fulls/first11.png" alt="" /></a>
+        <h3>Thursday December 2017 </h3>
+        <p> We all might be seeking peace ..when pressure coming down heavily ..bursting out of it is the difficult
+          things we all face ..so that is how I overcome it .. it’s always recuperate my mindset ..to do stuff like
+          this </p>
+      </article>
+
+      <article class="thumb">
+        <a href="images/fulls/first12.png" class="image"><img src="images/fulls/first12.png" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+      <article class="thumb">
+        <a href="images/fulls/first13.png" class="image"><img src="images/fulls/first13.png" alt="" /></a>
+        <h3>Thursday December 2017 </h3>
+        <p> We all might be seeking peace ..when pressure coming down heavily ..bursting out of it is the difficult
+          things we all face ..so that is how I overcome it .. it’s always recuperate my mindset ..to do stuff like
+          this </p>
+
+      </article>
+
+      <article class="thumb">
+        <a href="images/fulls/first14.png" class="image"><img src="images/fulls/first14.png" alt="" /></a>
+        <h3>Friday December 2017 </h3>
+        <p> OMG! Feel like flying ...no pressure ..no shit who cares ? And who knows? That I’m fucking happy all by
+          my self alone… doing stuff like this ...seize the moment!!!</p>
+      </article>
+
+      <article class="thumb">
+        <a href="images/fulls/first22.png" class="image"><img src="images/fulls/first22.png" alt="" /></a>
+        <h3>Friday December 2017 </h3>
+        <p> OMG! Feel like flying ...no pressure ..no shit who cares ? And who knows? That I’m fucking happy all by
+          my self alone… doing stuff like this ...seize the moment!!!</p>
+      </article>
+
+
+      <article class="thumb">
+        <a href="images/fulls/first.jpg" class="image"><img src="images/fulls/first.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+      <article class="thumb">
+        <a href="images/fulls/first0.jpg" class="image"><img src="images/fulls/first0.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+      <article class="thumb">
+        <a href="images/fulls/first1.jpg" class="image"><img src="images/fulls/first1.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+      <article class="thumb">
+        <a href="images/fulls/first2.jpg" class="image"><img src="images/fulls/first2.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+
+      <article class="thumb">
+        <a href="images/fulls/first3.jpg" class="image"><img src="images/fulls/first3.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+      <article class="thumb">
+        <a href="images/fulls/first4.jpg" class="image"><img src="images/fulls/first4.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+
+      <article class="thumb">
+        <a href="images/fulls/first5.jpg" class="image"><img src="images/fulls/first5.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+
+      <article class="thumb">
+        <a href="images/fulls/first6.jpg" class="image"><img src="images/fulls/first6.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+      <article class="thumb">
+        <a href="images/fulls/first7.jpg" class="image"><img src="images/fulls/first7.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+      <article class="thumb">
+        <a href="images/fulls/first8.jpg" class="image"><img src="images/fulls/first8.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+      <article class="thumb">
+        <a href="images/fulls/first9.jpg" class="image"><img src="images/fulls/first9.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+      <article class="thumb">
+        <a href="images/fulls/first10.jpg" class="image"><img src="images/fulls/first10.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+      <article class="thumb">
+        <a href="images/fulls/first11.jpg" class="image"><img src="images/fulls/first11.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+      <article class="thumb">
+        <a href="images/fulls/first12.jpg" class="image"><img src="images/fulls/first12.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+
+      <article class="thumb">
+        <a href="images/fulls/first13.jpg" class="image"><img src="images/fulls/first13.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+      <article class="thumb">
+        <a href="images/fulls/first14.jpg" class="image"><img src="images/fulls/first14.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+
+      <article class="thumb">
+        <a href="images/fulls/first15.jpg" class="image"><img src="images/fulls/first15.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+
+      <article class="thumb">
+        <a href="images/fulls/first16.jpg" class="image"><img src="images/fulls/first16.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+      <article class="thumb">
+        <a href="images/fulls/first17.jpg" class="image"><img src="images/fulls/first17.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+      <article class="thumb">
+        <a href="images/fulls/first18.jpg" class="image"><img src="images/fulls/first18.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+      <article class="thumb">
+        <a href="images/fulls/first19.jpg" class="image"><img src="images/fulls/first19.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+      <article class="thumb">
+        <a href="images/fulls/first20.JPG" class="image"><img src="images/fulls/first20.JPG" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+
+      <article class="thumb">
+        <a href="images/fulls/first21.JPG" class="image"><img src="images/fulls/first21.JPG" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+      <article class="thumb">
+        <a href="images/fulls/first22.jpg" class="image"><img src="images/fulls/first22.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+
+      <article class="thumb">
+        <a href="images/fulls/first23.jpg" class="image"><img src="images/fulls/first23.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+      <article class="thumb">
+        <a href="images/fulls/first24.jpg" class="image"><img src="images/fulls/first24.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+
+      <article class="thumb">
+        <a href="images/fulls/first25.jpg" class="image"><img src="images/fulls/first25.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+
+      <article class="thumb">
+        <a href="images/fulls/first26.jpg" class="image"><img src="images/fulls/first26.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+      <article class="thumb">
+        <a href="images/fulls/first27.jpg" class="image"><img src="images/fulls/first27.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+      <article class="thumb">
+        <a href="images/fulls/first28.jpg" class="image"><img src="images/fulls/first28.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+      <article class="thumb">
+        <a href="images/fulls/first29.jpg" class="image"><img src="images/fulls/first29.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+      <article class="thumb">
+        <a href="images/fulls/first30.jpg" class="image"><img src="images/fulls/first30.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+      <article class="thumb">
+        <a href="images/fulls/first31.jpg" class="image"><img src="images/fulls/first31.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+      <article class="thumb">
+        <a href="images/fulls/first32.jpg" class="image"><img src="images/fulls/first32.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+
+      <article class="thumb">
+        <a href="images/fulls/first33.jpg" class="image"><img src="images/fulls/first33.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+      <article class="thumb">
+        <a href="images/fulls/first34.jpg" class="image"><img src="images/fulls/first34.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+
+      <article class="thumb">
+        <a href="images/fulls/first35.jpg" class="image"><img src="images/fulls/first35.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+
+      <article class="thumb">
+        <a href="images/fulls/first36.jpg" class="image"><img src="images/fulls/first36.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+      <article class="thumb">
+        <a href="images/fulls/first37.jpg" class="image"><img src="images/fulls/first37.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+      <article class="thumb">
+        <a href="images/fulls/first38.jpg" class="image"><img src="images/fulls/first38.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+      <article class="thumb">
+        <a href="images/fulls/first39.jpg" class="image"><img src="images/fulls/first39.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+      <article class="thumb">
+        <a href="images/fulls/first40.jpg" class="image"><img src="images/fulls/first40.jpg" alt="" /></a>
+        <h3>Monday December 2017 </h3>
+        <p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature
+          ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
+
+      </article>
+
+
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer id="footer" class="panel">
+      <div class="inner split">
+        <div>
+          <section>
+            <h2>Private Cloud Based Gallery</h2>
+            <p> Private Cloud Based Gallery is currently in beta version so it still have to be done for production and
+              security. The developer, Ja Nakh Pon still need to update its preferences and performance within four
+              months.. So, if you found it fascinate enough to see on desktop screen ..please give us feedback via
+              using social media networking sites down below.</p>
+          </section>
+          <section>
+            <h2> Options </h2>
+            <ul class="icons">
              
-          
-            </article>
-            
+                             <div class="col-md-12" style="color: white; margin:5px;">
+                                <a style="color: white; margin:5px;" href="/index"><i class="ni ni-collection"></i></a>
+                                <a style="color: white; margin:5px;" href="/blogs"><i class="ni ni-money-coins"></i></a>
+                                <a style="color: white; margin:5px;" href="/forecast"> <i class="ni ni-map-big"></i></a>
+                                <a style="color: white; margin:5px;" href="/single"><i class="ni ni-tablet-button"></i></a>
+                                <a style="color: white; margin:5px;" href="/manual"> <i class="ni ni-support-16"></i></a>
+                                <a style="color: white; margin:5px;" href="/single"> <i class="ni ni-send"></i></a>
+                                <a style="color: white; margin:5px;" href="/"><i class="ni ni-button-power"></i></a>
+                            </div>
+            </ul>
+          </section>
+          <p class="copyright">
+            &ccopyright2018; Greentech Innovation Group
+          </p>
+        </div>
+        <div>
+          <section>
+            <h2>Upload new</h2>
+            <form method="POST" enctype="multipart/form-data" action="/post">
+              <div class="fields">
+                <div class="field half">
+                  <input type="text" placeholder="Wed August 22, Azim Damn" name="post_title" style="font-family: San Francisco Text; font-weight: bold;">
+                </div>
+                <div class="upload">
+                  <input type="file" name="post_imasge" />
+                </div>
+                <div class="field">
 
-
-            <% } %>
-
-
-        <article class="thumb">
-              <a href="images/fulls/first2.png" class="image"><img src="images/fulls/first2.png" alt="" /></a>
-              <h3>Monday December 2017 </h3>
-<p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
-            </article>
-            <article class="thumb">
-              <a href="images/fulls/first5.png" class="image"><img src="images/fulls/first5.png" alt="" /></a>
-              <h3>Sunday December 2017 </h3>
-<p> Gotta say super sunday .. OMG!!! .. why I have never been  here ...to look such a majestic panorama ..what an awesome … I love it .</p>
-
-            </article>
-            <article class="thumb">
-              <a href="images/fulls/first6.png" class="image"><img src="images/fulls/first6.png" alt="" /></a>
-              <h3>Tuesday  December 2017 </h3>
-<p> Pretty awesome ..chasing the freedom  within by taking off stress ...shitting social ….what a great day … Love to be here .. love to do so ..</p>
-            </article>
-            <article class="thumb">
-              <a href="images/fulls/first7.png" class="image"><img src="images/fulls/first7.png" alt="" /></a>
-              <h3>Wednesday December 2017 </h3>
-<p> it has been a long time ..not getting full freedom ...ruminate me again ..can’t wait till weekend so here I am </p>
-
-            </article>
-             <article class="thumb">
-              <a href="images/fulls/first8.png" class="image"><img src="images/fulls/first8.png" alt="" /></a>
-              <h3>Friday December 2017 </h3>
-<p> OMG! Feel like flying ...no pressure ..no shit who cares ? And who knows? That I’m fucking happy all by my self alone… doing stuff like this ...seize the moment!!!</p>
-
-            </article>
-            <article class="thumb">
-              <a href="images/fulls/first9.png" class="image"><img src="images/fulls/first9.png" alt="" /></a>
-              <h3>Sunday December 2017 </h3>
-<p> Gotta say super sunday .. OMG!!! .. why I have never been  here ...to look such a majestic panorama ..what an awesome … I love it .</p>
-
-            </article>
-            <article class="thumb">
-              <a href="images/fulls/first10.png" class="image"><img src="images/fulls/first10.png" alt="" /></a>
-              <h3>Monday December 2017 </h3>
-<p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
-
-            </article>
-            <article class="thumb">
-              <a href="images/fulls/first11.png" class="image"><img src="images/fulls/first11.png" alt="" /></a>
-              <h3>Thursday December 2017 </h3>
-<p> We all might be seeking peace ..when pressure coming down heavily ..bursting out of it is the difficult things we all face ..so that is how I overcome it .. it’s always recuperate my mindset ..to do stuff like this </p>
-            </article>
-             <article class="thumb">
-              <a href="images/fulls/first12.png" class="image"><img src="images/fulls/first12.png" alt="" /></a>
-             <h3>Monday December 2017 </h3>
-<p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
-
-            </article>
-            <article class="thumb">
-              <a href="images/fulls/first13.png" class="image"><img src="images/fulls/first13.png" alt="" /></a>
-              <h3>Thursday December 2017 </h3>
-<p> We all might be seeking peace ..when pressure coming down heavily ..bursting out of it is the difficult things we all face ..so that is how I overcome it .. it’s always recuperate my mindset ..to do stuff like this </p>
-
-            </article>
-            <article class="thumb">
-              <a href="images/fulls/first14.png" class="image"><img src="images/fulls/first14.png" alt="" /></a>
-              <h3>Friday December 2017 </h3>
-<p> OMG! Feel like flying ...no pressure ..no shit who cares ? And who knows? That I’m fucking happy all by my self alone… doing stuff like this ...seize the moment!!!</p>
-            </article>
-            <article class="thumb">
-              <a href="images/fulls/first0.jpg" class="image"><img src="images/fulls/first0.jpg" alt="" /></a>
-              <h3>Monday December 2017 </h3>
-<p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
-
-            </article>
-             <article class="thumb">
-              <a href="images/fulls/first17.jpg" class="image"><img src="images/fulls/first17.jpg" alt="" /></a>
-              <h3>Thursday December 2017 </h3>
-<p> We all might be seeking peace ..when pressure coming down heavily ..bursting out of it is the difficult things we all face ..so that is how I overcome it .. it’s always recuperate my mindset ..to do stuff like this </p>
-            </article>
-            <article class="thumb">
-              <a href="images/fulls/first22.png" class="image"><img src="images/fulls/first22.png" alt="" /></a>
-            <h3>Monday December 2017 </h3>
-<p> it was pretty cool to have a good time at shooting and capturing the moment ...exploring the nature ...everything was so green and fresh ..so I had to say what a fantastic! .</p>
-
-            </article>
-            <article class="thumb">
-              <a href="images/fulls/first23.jpg" class="image"><img src="images/fulls/first23.jpg" alt="" /></a>
-             <h3>Saturday December 2017 </h3>
-<p> What a good time to savor the moment by shooting and capturing the beauty of nature ...what a moment ..don’t wanna go back home!.</p>
-            </article>
-             <article class="thumb">
-              <a href="images/fulls/first24.jpg" class="image"><img src="images/fulls/first24.jpg" alt="" /></a>
-             <h3>Thursday December 2017 </h3>
-<p> We all might be seeking peace ..when pressure coming down heavily ..bursting out of it is the difficult things we all face ..so that is how I overcome it .. it’s always recuperate my mindset ..to do stuff like this </p>
-            </article>
-
-
-
-          </div>
-
-
-        <!-- Footer -->
-          <footer id="footer" class="panel">
-            <div class="inner split">
-              <div>
-                <section>
-                  <h2>Private Cloud Based Gallery</h2>
-                  <p> Private Cloud Based Gallery is currently in beta version so it still have to be done for production and security. The developer, Ja Nakh Pon still need to update its preferences and performance within four months.. So, if you found it fascinate enough to see on desktop screen ..please give us feedback via using social media networking sites down below.</p>
-                </section>
-                <section>
-                  <h2>Follow us on ...</h2>
-                  <ul class="icons">
-                    <li><a href="https://twitter.com/" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                    <li><a href="https://www.facebook.com/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                    <li><a href="https://Instagram.com/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-                    <li><a href="https://GitHub.com/" class="icon fa-github"><span class="label">GitHub</span></a></li>
-                    <li><a href="https://Dribble.com/" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-                    <li><a href="https://LinkedIn.com/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                  </ul>
-                </section>
-                <p class="copyright">
-                  &copyright2018; Greentech Innovation Group
-                </p>
+                  <textarea name="post_comment" id="" cols="30" rows="6" placeholder="..i'm like feeling crazy about being in here ..a lovely place by myself ...alone..it ruminate me what a fantastic ...and i love it !"></textarea>
+                </div>
               </div>
-              <div>
-                <section>
-                  <h2>Upload new</h2>
-                  <form  method="POST" enctype="multipart/form-data" action="/post">
-                    <div class="fields">
-                      <div class="field half">
-                       <input type="text" placeholder="Wed August 22, Azim Damn" name="post_title" style="font-family: San Francisco Text; font-weight: bold;">
-                      </div>
-                      <div class="upload">
-                         <input type="file" name="post_imasge"/>
-                      </div>
-                      <div class="field">
-                       
-                       <textarea name="post_comment" id="" cols="30" rows="6" placeholder="..i'm like feeling crazy about being in here ..a lovely place by myself ...alone..it ruminate me what a fantastic ...and i love it !"></textarea>
-                      </div>
-                    </div>
-                    <ul class="actions">
-                      <li><input type="submit" value="Save" class="primary" /></li>
-                      <li><input type="reset" value="Reset" /></li>
-                    </ul>
-                  </form>
-                </section>
-              </div>
-            </div>
-          </footer>
-
+              <ul class="actions">
+                <li><input type="submit" value="Save" class="primary" /></li>
+                <li><input type="reset" value="Reset" /></li>
+              </ul>
+            </form>
+          </section>
+        </div>
       </div>
+    </footer>
 
-    <!-- Scripts -->
-      <script src="assets/js/jquery.min.js"></script>
-      <script src="assets/js/jquery.poptrox.min.js"></script>
-      <script src="assets/js/browser.min.js"></script>
-      <script src="assets/js/breakpoints.min.js"></script>
-      <script src="assets/js/util.js"></script>
-      <script src="assets/js/main.js"></script>
+  </div>
 
-  </body>
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.poptrox.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>

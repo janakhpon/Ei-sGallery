@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300i,400,600,700,800');
 body {
-  background: url(https://subtlepatterns.com/patterns/use_your_illusion.png);
+ background-color: #172b4d !important;
 	font-family: 'Open Sans', sans-serif;
 }
 svg {
