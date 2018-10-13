@@ -21,3 +21,7 @@ using google map
 
 #Color
 using Color from npm for console color
+
+
+#Capped  collection
+in report options coming up dual database 
