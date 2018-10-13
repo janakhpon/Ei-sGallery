@@ -21,7 +21,7 @@ var port = process.env.PORT || 3000;
 
 //connect mongo
 mongoose.connect(
-  "mongodb://janakhpon:janakhponchan1998@ds125362.mlab.com:25362/mygallery"
+  "mongodb://janakhpon:*******/mygallery"
 );
 
 // configure multer
@@ -100,8 +100,8 @@ console.log(
 
 //Starting facebook auth
 passport1.use(new Strategyf({
-    clientID: '2162509897362005',
-    clientSecret: 'f127700bf2c34fbfe25bb32648905974',
+    clientID: '*****',
+    clientSecret: '.******',
     callbackURL: 'http://localhost:3000/login/facebook/return'
   },
   function (accessToken, refreshToken, profile, cb) {
@@ -134,8 +134,8 @@ app.get('/login/facebook/return',
 
 
 passport2.use(new Strategyt({
-    consumerKey: 'BQousff3h4Glk0tX8yh8eoyHZ',
-    consumerSecret: 'lVi4JGrhIa4rXMbfDRfpuv77nLaZ2fMMdac33qOftCy8WbuBf7',
+    consumerKey: '******',
+    consumerSecret: '******',
     callbackURL: 'http://127.0.0.1:3000/login/twitter/callback'
   },
   function (token, tokenSecret, profile, cb) {
