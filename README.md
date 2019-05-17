@@ -1,4 +1,49 @@
-### Ei'sGallery or A Cloud Based Gallery
-  Using facebook Oauth, Twitter Oauth and Local Oauth but private user only so u need to configure yourself to local if you wanna use.
-  User can upload photo as memory to Ei'sGallery with date and time and memories can be viewed with effects and styles on slected pages and also can manage them too.
-  Weather and location searches are also available for user trip or places to visit so before u go check the weather conditions so it make u more comfortable in chosing what to wear and what to do. Hope Ei'sGallery will help u in saving memories.
+# Ei'Gallery
+  Ei'sGallery is a simple wallpaper website for nature lover. Here is a github example demo for [herokudeploy](https://arcane-spire-75883.herokuapp.com/)
+
+
+[![Build Status](https://secure.travis-ci.org/fent/node-ytdl.svg)](https://github.com/janakhpon/Ei-sGallery.git)
+[![Dependency Status](https://david-dm.org/fent/node-ytdl.svg)](https://github.com/janakhpon/Ei-sGallery.git)
+[![codecov](https://codecov.io/gh/fent/node-ytdl/branch/master/graph/badge.svg)](https://arcane-spire-75883.herokuapp.com/)
+
+# Usage
+
+clone the repository
+
+    git clone https://github.com/janakhpon/Ei-sGallery.git
+
+Get into root folder
+
+    cd Ei'sGallery
+
+Install Dependencies using [npm](https://www.npmjs.com/)
+
+    npm install
+    npm i -d
+    npm start
+
+Install Dependencies using [yarn](https://yarnpkg.com/en/)
+
+    yarn install
+    yarn add
+    yarn start
+
+
+
+
+# Warning
+If u run into error use the following steps
+
+```bash
+sudo yarn install
+sudo yarn add
+sudo yarn start
+```
+or
+
+```bash
+sudo npm install
+sudo npm i -d
+sudo npm start
+```
+
