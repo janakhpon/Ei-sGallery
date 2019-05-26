@@ -2,9 +2,6 @@
  Ei'sGallery is a simple wallpaper website for nature lover. Here is a github example demo for [herokudeploy](https://ei-sgallery.herokuapp.com/)
 
 
-[![Build Status](https://secure.travis-ci.org/fent/node-ytdl.svg)](https://github.com/janakhpon/Ei-sGallery.git)
-[![Dependency Status](https://david-dm.org/fent/node-ytdl.svg)](https://github.com/janakhpon/Ei-sGallery.git)
-[![codecov](https://codecov.io/gh/fent/node-ytdl/branch/master/graph/badge.svg)](https://ei-sgallery.herokuapp.com/)
 
 # Usage
 
