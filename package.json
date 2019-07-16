@@ -12,7 +12,7 @@
     "url": "git+https://github.com/janakhpon/Ei-sGallery.git"
   },
   "keywords": [],
-  "author": "novae",
+  "author": "janakhponchan",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.1",
