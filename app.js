@@ -15,7 +15,7 @@ const galaries_api = require("./routes/galarie-api");
 
 
 // DB Config
-const db = require("./config/database");
+const db = require("./config/key");
 
 // Map global promise - get rid of warning
 mongoose.Promise = global.Promise;
