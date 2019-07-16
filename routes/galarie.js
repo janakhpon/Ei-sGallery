@@ -76,19 +76,40 @@ router.get("/edit/:id", (req, res) => {
   });
 });
 
-// Process Form
-router.post("/", upload.any(), (req, res) => {
-  const newUpload = {};
-  newUpload.type = req.body.type;
-  newUpload.image = req.files[0].filename;
+//Process
+router.post("/", async (req, res) => {
+  const galarie = new Galarie();
+  galarie.type = req.body.type;
   if (typeof req.body.keyword !== "undefined") {
-    newUpload.keyword = req.body.keyword.split(",");
+   galarie.keyword = req.body.keyword.split(",");
   }
+  galarie.image = "/img/" + req.file.filename;
+  galarie.mimetype = req.file.mimetype;
+  //image.description = req.body.description;
+  //image.filename = req.file.filename;
+  //image.path = "/img/uploads/" + req.file.filename;
+  //image.originalname = req.file.originalname;
+  //image.mimetype = req.file.mimetype;
+  //image.size = req.file.size;
 
-  new Galarie(newUpload).save().then(galarie => {
-    res.redirect("/");
-  });
+  await galarie.save();
+  res.redirect("/");
 });
+
+
+// Process Form
+//router.post("/", upload.any(), (req, res) => {
+  //const newUpload = {};
+  //newUpload.type = req.body.type;
+  //newUpload.image = req.files[0].filename;
+ // if (typeof req.body.keyword !== "undefined") {
+   // newUpload.keyword = req.body.keyword.split(",");
+ // }
+
+  //new Galarie(newUpload).save().then(galarie => {
+    //res.redirect("/");
+  //});
+//});
 
 // @route   GET api/tasks/:id
 // @desc    Get task by id
