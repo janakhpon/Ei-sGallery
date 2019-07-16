@@ -8,7 +8,7 @@ const galarieSchema = new Schema({
     required: true
   },
   keyword:{
-    type: String,
+    type: [String],
     required: true
   },
   image:{

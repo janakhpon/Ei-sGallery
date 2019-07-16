@@ -1,17 +1,14 @@
-const express = require('express');
-const mongoose = require('mongoose');
+const express = require("express");
+const mongoose = require("mongoose");
 const multer = require("multer");
 const path = require("path");
 const router = express.Router();
 
-
 // Load Galarie Model
 
-require('../models/galarie');
+require("../models/galarie");
 
-const Galarie = mongoose.model('galarie');
-
-
+const Galarie = mongoose.model("galarie");
 
 const upload = multer({
   storage: multer.diskStorage({
@@ -42,74 +39,93 @@ const upload = multer({
 });
 
 // Galarie Index Page
-router.get('/', (req, res) => {
+router.get("/", (req, res) => {
   Galarie.find()
-    .sort({date:'desc'})
+    .sort({ date: "desc" })
     .then(galaries => {
-      res.render('index', {
+      res.render("index", {
         galaries: galaries
-        
       });
-      
-      
+    });
+});
+
+// Galarie Index Page
+router.get("/admin", (req, res) => {
+  Galarie.find()
+    .sort({ date: "desc" })
+    .then(galaries => {
+      res.render("index", {
+        galaries: galaries
+      });
     });
 });
 
 // Add Galarie Form
-router.get('/add', (req, res) => {
-  res.render('index');
+router.get("/add", (req, res) => {
+  res.render("index");
 });
 
 // Edit Galarie Form
-router.get('/edit/:id', (req, res) => {
+router.get("/edit/:id", (req, res) => {
   Galarie.findOne({
     _id: req.params.id
-  })
-  .then(galarie => {
-
-      res.render('index', {
-        galarie:galarie
-      });
-    
+  }).then(galarie => {
+    res.render("index", {
+      galarie: galarie
+    });
   });
 });
 
 // Process Form
 router.post("/", upload.any(), (req, res) => {
-  
-  const newUpload = {
-    type: req.body.type,
-    keyword: req.body.keyword,
-    image: req.files[0].filename
-  };
+  const newUpload = {};
+  newUpload.type = req.body.type;
+  newUpload.image = req.files[0].filename;
+  if (typeof req.body.keyword !== "undefined") {
+    newUpload.keyword = req.body.keyword.split(",");
+  }
+
   new Galarie(newUpload).save().then(galarie => {
     res.redirect("/");
   });
 });
 
+// @route   GET api/tasks/:id
+// @desc    Get task by id
+// @access  Public
+router.post("/keyword", (req, res) => {
+  Galarie.find({ keyword: { $regex: ".*" + req.body.keyword1 + ".*" } })
+    .limit(15)
+    .then(galaries => {
+      res.render("index", {
+        galaries: galaries
+      });
+      console.log(galaries);
+    })
+    .catch(err =>
+      res.status(404).json({ notaskfound: "No task match with that word" })
+    );
+});
+
 // Edit Form process
-router.put('/:id', (req, res) => {
+router.put("/:id", (req, res) => {
   Galarie.findOne({
     _id: req.params.id
-  })
-  .then(galarie => {
-
+  }).then(galarie => {
     galarie.title = req.body.title;
     galarie.details = req.body.details;
 
-    galarie.save()
-      .then(galarie => {
-        res.redirect('/');
-      })
+    galarie.save().then(galarie => {
+      res.redirect("/");
+    });
   });
 });
 
 // Delete Galarie
-router.delete('/:id', (req, res) => {
-  Galarie.remove({_id: req.params.id})
-    .then(() => {
-      res.redirect('/');
-    });
+router.delete("/:id", (req, res) => {
+  Galarie.remove({ _id: req.params.id }).then(() => {
+    res.redirect("/");
+  });
 });
 
 module.exports = router;
