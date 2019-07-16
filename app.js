@@ -52,10 +52,6 @@ app.use(methodOverride("_method"));
 
 
 
-
-
-
-
 // Use routes
 app.use("/", galaries);
 

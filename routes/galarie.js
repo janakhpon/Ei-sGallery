@@ -128,6 +128,34 @@ router.post("/keyword", (req, res) => {
     );
 });
 
+// @route   GET api/tasks/:id
+// @desc    Get task by id
+// @access  Public
+router.get("/:sort", (req, res) => {
+  if (req.params.sort == 'DATE') {
+    res.redirect('/');
+  } else {
+     Galarie.find({ type: { $regex: ".*" + req.params.sort + ".*" } })
+       .limit(15)
+       .then(galaries => {
+         res.render("index", {
+           galaries: galaries
+         });
+         console.log(galaries);
+       })
+       .catch(err =>
+         res
+           .status(404)
+           .json({ notaskfound: "No task match with that word" })
+       );
+  }
+ 
+});
+
+
+
+
+
 // Edit Form process
 router.put("/:id", (req, res) => {
   Galarie.findOne({
