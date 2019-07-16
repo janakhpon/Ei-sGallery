@@ -3,15 +3,11 @@ const path = require("path");
 const methodOverride = require("method-override");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-const multer = require("multer");
-const uuid = require("uuid/v4");
 
 const app = express();
 
 // Load routes
 const galaries = require("./routes/galarie");
-
-
 
 // DB Config
 const db = require("./config/database");
@@ -30,15 +26,7 @@ mongoose
 app.use(express.static("public"));
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
-
-//generate uuid
-const storage = multer.diskStorage({
-  destination: path.join(__dirname, "public/img"),
-  filename: (req, file, cb, filename) => {
-    cb(null, uuid() + path.extname(file.originalname));
-  }
-});
-app.use(multer({ storage }).single("image"));
+app.use(express.static("uploads"));
 
 // Body parser middleware
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -49,12 +37,6 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // Method override middleware
 app.use(methodOverride("_method"));
-
-
-
-
-
-
 
 // Use routes
 app.use("/", galaries);

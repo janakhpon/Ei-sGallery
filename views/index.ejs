@@ -20,23 +20,6 @@
 
 
 
-        <!-- Sortby Grid -->
-        <div class="nav__sort">
-            <div class="dropdown">
-                <button class="dropdown__btn">
-                    By&nbsp;:
-                    <i class="fa fa-caret-down"></i>
-                </button>
-
-                <div class="dropdown__content">
-                    <a href="#">DATE</a>
-                    <a href="#">RATING</a>
-                    <a href="#">DOWNLOADS</a>
-                </div>
-            </div>
-        </div>
-
-
 
 
         <!-- Sortby Grid -->
@@ -162,13 +145,21 @@
 
         </div>
 
-    <% for(let i=0; i<galaries.length; i++) {%>
+
+
+        <% galaries.forEach(function (galarie) { %>
+            <img class="photos__img" src="<%= galarie.image %>" alt="" />
+         <% }) %>
+   <!--
+        <% for(let i=0; i<galaries.length; i++) {%>
 
 
        <img class="photos__img" src="<%= galaries[i].image %>" alt="" />
 
 
       <% } %>
+   -->
+
 
 
 
