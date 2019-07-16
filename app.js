@@ -21,10 +21,10 @@ const db = require("./config/key");
 mongoose.Promise = global.Promise;
 // Connect to mongoose
 mongoose
-  .connect(db.mongoURI, {
+  .connect(db.MONGO_URI, {
     useMongoClient: true
   })
-  .then(() => console.log("MongoDB Connected..."))
+  .then(() => console.log(`MONGODB connected on ${db.MONGO_URI}`))
   .catch(err => console.log(err));
 
 // ejs Middleware
