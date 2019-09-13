@@ -49,6 +49,18 @@ router.get("/", (req, res) => {
     });
 });
 
+// Galarie JSON Page
+router.get("/", (req, res) => {
+  Galarie.find()
+    .sort({ date: "desc" })
+    .then(galaries => {
+      res.render("index", {
+        galaries: galaries
+      });
+    });
+});
+
+
 // Galarie Index Page
 router.get("/admin", (req, res) => {
   Galarie.find()
@@ -114,8 +126,8 @@ router.post("/", async (req, res) => {
 // @route   GET api/tasks/:id
 // @desc    Get task by id
 // @access  Public
-router.post("/keyword", (req, res) => {
-  Galarie.find({ keyword: { $regex: ".*" + req.body.keyword1 + ".*" } })
+router.post("/keyword/:keyword1", (req, res) => {
+  Galarie.find({ keyword: { $regex: ".*" + req.params.keyword1 + ".*" } })
     .limit(15)
     .then(galaries => {
       res.render("index", {
