@@ -50,13 +50,11 @@ router.get("/", (req, res) => {
 });
 
 // Galarie JSON Page
-router.get("/", (req, res) => {
+router.get("/api", (req, res) => {
   Galarie.find()
     .sort({ date: "desc" })
     .then(galaries => {
-      res.render("index", {
-        galaries: galaries
-      });
+      res.json(galaries);
     });
 });
 

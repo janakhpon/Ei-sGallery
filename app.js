@@ -60,5 +60,5 @@ app.use("/ei-gallery", galaries_api);
 const port = process.env.PORT || 5000;
 
 app.listen(port, () => {
-  console.log(`Server started on port http://localhost:5000/${port}`);
+  console.log(`Server started on port http://localhost:${port}`);
 });
