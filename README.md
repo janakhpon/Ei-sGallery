@@ -1,5 +1,5 @@
 # Ei'Gallery
-  Ei'sGallery is a simple wallpaper website for nature lover.You can upload wallpaper with related TYPE and TAG WORDS and as a consequence of this you can easily select TYPE options or SEARCH TAG WORDS from search box. CRUD operation can only be done with admin route. Here is a github example demo for [herokudeploy](https://ei-sgallery.herokuapp.com/)
+  Ei'sGallery is a simple wallpaper website for nature lover.You can upload wallpaper with related TYPE and TAG WORDS and as a consequence of this you can easily select TYPE options or SEARCH TAG WORDS from search box. CRUD operation can only be done with admin route. Please Check the `RELEASE_STATUS` before you clone. Here is a deployed link [herokudeploy](https://ei-sgallery.herokuapp.com/)
 
 
 
