@@ -27,30 +27,23 @@ Install Dependencies using [yarn](https://yarnpkg.com/en/)
     yarn start
     yarn dev
 
+## Included Features
+ 1.File upload
+ 2.REST/CRUD
+ 3.SERVER SIDE APPLICATION
+ 4.API for client is not yet available
 
+## RELEASE_STATUS:IN PROGRESS
+## RELEASE_CODE: GDEV015
+ Sorry this project is not completely done yet and only a few features are available. If you are considering about cloning this project please wait till it's completed.
 
-
-# Warning
-If u run into error use the following steps
-
+## API OPTIONS
+ Still working on it! so it's not available at the moment
+    
 ```bash
-sudo yarn install
-sudo yarn
-sudo yarn start
-sudo yarn dev
-```
-or
-
-```bash
-sudo npm install
-sudo npm i -d
-sudo npm run start
-sudo npm run dev
+    not available yet
 ```
 
-#API REQUESTS
-Currently only list of data `get` request only is possile to make but i still havent add `allow cross origin` option for external request.
-```bash
-axios.get('https://ei-sgallery.herokuapp.com/ei-gallery/list', ...)
+
 ```
 
