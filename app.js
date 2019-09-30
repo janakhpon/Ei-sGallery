@@ -11,7 +11,7 @@ const app = express();
 // Load routes
 const galaries = require("./routes/galarie");
 const galaries_api = require("./routes/galarie-api");
-
+const api = require('./routes/api');
 
 
 // DB Config
@@ -53,9 +53,11 @@ app.use(methodOverride("_method"));
 
 
 
+
 // Used routes
 app.use("/", galaries);
 app.use("/ei-gallery", galaries_api);
+app.use('/api/', api);
 
 const port = process.env.PORT || 5000;
 
