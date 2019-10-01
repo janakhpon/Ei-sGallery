@@ -78,7 +78,7 @@ router.post("/keyword", (req, res) => {
 });
 
 
-//Post image
+//Update image to Galarie
 router.post("/upload", async (req, res) => {
   const galarie = new Galarie();
   galarie.type = req.body.type;
@@ -129,18 +129,18 @@ router.put("/update", (req, res) => {
 });
 
 
-
-// Delete  image from Galarie
-router.delete("/:id", (req, res) => {
-  Galarie.remove({ _id: req.params.id }).then(() => {
-    res.redirect("/");
-  });
-});
-
-
 // Delete image from Galarie
 router.delete("/delete", (req, res) => {
   Galarie.remove({ _id: req.body.id }).then(() => {
+    res.status(200).json({
+      Deleted : "Deleted from Gallery"
+    })
+  });
+});
+
+// Delete image from Galarie
+router.delete("/delete/:id", (req, res) => {
+  Galarie.remove({ _id: req.params.id }).then(() => {
     res.status(200).json({
       Deleted : "Deleted from Gallery"
     })

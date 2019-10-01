@@ -34,7 +34,7 @@ Install Dependencies using [yarn](https://yarnpkg.com/en/)
  4.API for client is not yet available
 
 ## RELEASE_STATUS:IN PROGRESS
-## RELEASE_CODE: GDEV016
+## RELEASE_CODE: GDEV018
  Sorry this project is not completely done yet and only a few features are available. If you are considering about cloning this project please wait till it's completed.
 
 ## API OPTIONS
@@ -46,6 +46,11 @@ Install Dependencies using [yarn](https://yarnpkg.com/en/)
    GET => /api/keyword/:keyword
    POST => /api/type
    POST => /api/keyword
+   POST => /api/upload
+   PUT => /api/update/:id
+   PUT => /api/update
+   DELTE => /api/delete/:id
+   DELTE => /api/delete
 ```
 
 
