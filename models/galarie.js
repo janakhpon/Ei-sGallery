@@ -15,6 +15,10 @@ const galarieSchema = new Schema({
     type: String,
     required: true
   },
+  description:{
+    type: String,
+    required: true
+  },
   mimetype: { type: String },
   date: {
     type: Date,
