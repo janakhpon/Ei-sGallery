@@ -17,7 +17,6 @@ const UserSchema = new Schema({
     },
     code: {
         type: String,
-        required: true
     },
     activate: {
         type: Boolean,
@@ -26,12 +25,6 @@ const UserSchema = new Schema({
     password: {
         type: String,
         required: true
-    },
-    avatar: {
-        type: String
-    },
-    mimetype: {
-        type: String
     },
     date: {
         type: Date,

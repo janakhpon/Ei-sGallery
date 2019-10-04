@@ -7,6 +7,12 @@ const ProfileSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: 'users'
     },
+    avatar: {
+        type: String
+    },
+    mimetype: {
+        type: String
+    },
     country: {
         type: String
     },

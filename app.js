@@ -12,6 +12,7 @@ const app = express();
 const galaries = require("./routes/galarie");
 const galaries_api = require("./routes/galarie-api");
 const api = require('./routes/api');
+const user = require('./routes/user');
 
 
 // DB Config
@@ -66,6 +67,7 @@ app.use(function(req,res,next){
 })
 
 // Used routes
+app.use("/user/", user);
 app.use("/", galaries);
 app.use("/ei-gallery", galaries_api);
 app.use('/api/', api);
